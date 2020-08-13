@@ -1,0 +1,28 @@
+.App {
+    margin: 20px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.list {
+    width: 33%;
+    text-align: center;
+}
+
+.detailed-view {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .list {
+        width: 50%;
+    }
+}

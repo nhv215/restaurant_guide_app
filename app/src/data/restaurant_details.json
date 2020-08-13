@@ -1,0 +1,147 @@
+{
+    "list": [{
+            "key": 1,
+            "name": "Deccan Spice",
+            "cuisine": "Indian",
+            "location": {
+                "address": "New York, NY"
+            },
+            "price_range": 1234,
+            "rating": 4.2,
+            "reviews": 70,
+            "phone": 9876543210
+        },
+        {
+            "key": 2,
+            "name": "Chipotle",
+            "cuisine": "Mexican",
+            "location": {
+                "address": "New York, NY"
+            },
+            "price_range": 1234,
+            "rating": 4.5,
+            "reviews": 75,
+            "phone": 9876543102
+        },
+        {
+            "key": 3,
+            "name": "Dominos",
+            "cuisine": "American",
+            "location": {
+                "address": "New York, NY"
+            },
+            "price_range": 1234,
+            "rating": 4.1,
+            "reviews": 80,
+            "phone": 9876542130
+        },
+        {
+            "key": 4,
+            "name": "Falafel Station",
+            "cuisine": "Halal",
+            "location": {
+                "address": "New York, NY"
+            },
+            "price_range": 1234,
+            "rating": 4.5,
+            "reviews": 75,
+            "phone": 9876543102
+        },
+        {
+            "key": 5,
+            "name": "T Thai",
+            "cuisine": "Thai, Asian",
+            "location": {
+                "address": "New York, NY"
+            },
+            "price_range": 1234,
+            "rating": 4.1,
+            "reviews": 80,
+            "phone": 9876542130
+        },
+        {
+            "key": 6,
+            "name": "McDonald's",
+            "cuisine": "American",
+            "location": {
+                "address": "New York, NY"
+            },
+            "price_range": 1234,
+            "rating": 4.5,
+            "reviews": 75,
+            "phone": 9876543102
+        },
+        {
+            "key": 7,
+            "name": "iHop",
+            "cuisine": "American",
+            "location": {
+                "address": "New York, NY"
+            },
+            "price_range": 1234,
+            "rating": 4.1,
+            "reviews": 80,
+            "phone": 9876542130
+        },
+        {
+            "key": 8,
+            "name": "99 Cents",
+            "cuisine": "American, Pizza",
+            "location": {
+                "address": "New York, NY"
+            },
+            "price_range": 1234,
+            "rating": 4.1,
+            "reviews": 80,
+            "phone": 9876542130
+        },
+        {
+            "key": 9,
+            "name": "Halal Guys",
+            "cuisine": "Halal",
+            "location": {
+                "address": "New York, NY"
+            },
+            "price_range": 1234,
+            "rating": 4.5,
+            "reviews": 75,
+            "phone": 9876543102
+        },
+        {
+            "key": 10,
+            "name": "Taco Bell",
+            "cuisine": "Mexican",
+            "location": {
+                "address": "New York, NY"
+            },
+            "price_range": 1234,
+            "rating": 4.1,
+            "reviews": 80,
+            "phone": 9876542130
+        },
+        {
+            "key": 11,
+            "name": "Rumba Cubana",
+            "cuisine": "Cuban",
+            "location": {
+                "address": "New York, NY"
+            },
+            "price_range": 1234,
+            "rating": 4.5,
+            "reviews": 75,
+            "phone": 9876543102
+        },
+        {
+            "key": 12,
+            "name": "Taste of China",
+            "cuisine": "Chinese",
+            "location": {
+                "address": "New York, NY"
+            },
+            "price_range": 1234,
+            "rating": 4.1,
+            "reviews": 80,
+            "phone": 9876542130
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+.app-title {
+    margin: 0 auto;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: super;
+    width: 90%;
+    text-align: center;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+}
+
+.header-logo {
+    display: inline-block;
+    width: 5%;
+}
