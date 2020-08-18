@@ -31,7 +31,7 @@ class App extends React.Component {
 		});
 		this.lat = lat ? lat : this.lat;
 		this.long = long ? long : this.long;
-		this.apiKey = '35bb318f120358404e5ff754e12cd183';
+		this.apiKey = '';
 		this.hostname = 'developers.zomato.com';
 		this.apiVersion = '/api/v2.1';
 		this.endpoint = 'search';

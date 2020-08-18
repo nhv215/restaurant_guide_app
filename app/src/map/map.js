@@ -75,7 +75,7 @@ import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/ap
 
 		return (
 			<LoadScript
-				googleMapsApiKey='AIzaSyBOrjy_fGYlxK9X_zjJWvCZRvON60-xxBI'>
+				googleMapsApiKey=''>
 				<GoogleMap
 					mapContainerStyle={mapStyles}
 					zoom={13}
