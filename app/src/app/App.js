@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import MapComponent from '../map/map';
-import GoogleMapReact from 'google-map-react';
 const axios = require('axios');
 
 class App extends React.Component {
@@ -12,7 +11,6 @@ class App extends React.Component {
 			detailsView: false,
 			displayValue: null
 		};
-		//this.geolocFail = this.geolocFail.bind(this);
 		this.displayValue = null;
 		this.detailsView = false;
 		this.lat = 40.730610;
@@ -38,8 +36,7 @@ class App extends React.Component {
 		this.apiVersion = '/api/v2.1';
 		this.endpoint = 'search';
 		this.count = 20;
-
-		let path = `https://${this.hostname}${this.apiVersion}/${this.endpoint}?entity_type=city&count=${this.count}&lat=${this.lat}&lon=${this.long}`;
+		let path = `https://${this.hostname}${this.apiVersion}/${this.endpoint}?count=${this.count}&lat=${this.lat}&lon=${this.long}&radius=50000`;
 		const headers = {
 			'user-key': this.apiKey
 		};
@@ -114,8 +111,6 @@ class App extends React.Component {
 	}
 
 	searchHandler = (e) => {
-		debugger;
-		console.log(this.refs.search.value)
 		let path = `https://${this.hostname}${this.apiVersion}/search?entity_type=city&count=${this.count}&q=${this.refs.search.value}`;
 		const headers = {
 			'user-key': this.apiKey
@@ -145,30 +140,27 @@ class App extends React.Component {
   	render = () => {
 		var detailsView = this.state.detailsView;
 		var tiles = !detailsView ? this.renderTiles() : this.renderDetails();
-		var selectedPlace = [{
+		var selectedPlace = {
 			
 				name: "Your location",
 				location: {
 					address: "",
-					latitude: this.lat,
-					longitude: this.long
+					lat: parseInt(this.lat),
+					lng: parseInt(this.long)
 				}
 			
 			
-		}];
+		};
 		
 		var locationList = this.state.list.map(item => {
 			return ({
 				name: item.restaurant.name,
 				location: {
-					address: item.restaurant.location.address,
-					latitude: item.restaurant.location.latitude,
-					longitude: item.restaurant.location.longitude
+					lat: parseInt(item.restaurant.location.latitude),
+					lng: parseInt(item.restaurant.location.longitude)
 				}
 			})
 		});
-		
-		var mapList = [...selectedPlace, ... locationList];
 		
 		return (
     		<div className="App">
@@ -176,7 +168,7 @@ class App extends React.Component {
 				<input type="text" placeholder="Search" ref="search"/>
 				<input type="button" onClick={this.searchHandler} value="Search"></input>
 				{tiles}
-				<MapComponent  list = {mapList} />
+				<MapComponent selectedPlace = {selectedPlace}  locationList = {locationList} google />
     		</div>
 		);
 	}
